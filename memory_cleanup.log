@@ -1,0 +1,10 @@
+2025-04-15 02:24:59,843 - Starting memory cleanup utility
+2025-04-15 02:24:59,850 - No training data found. Initializing empty model.
+2025-04-15 02:24:59,956 - Memory: Total=14188.1MB, Used=10804.1MB, Free=3384.0MB
+2025-04-15 02:24:59,976 - Use pytorch device_name: cpu
+2025-04-15 02:24:59,976 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 02:25:05,799 - Stored memory data in FAISS vector database with 1 total entries
+2025-04-15 02:25:10,934 - Not enough data points for training. Need at least 5 samples.
+2025-04-15 02:25:42,197 - Memory: Total=14188.1MB, Used=10453.7MB, Free=3734.4MB
+2025-04-15 02:25:42,201 - Use pytorch device_name: cpu
+2025-04-15 02:25:42,201 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2

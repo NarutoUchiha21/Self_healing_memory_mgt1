@@ -1,0 +1,37 @@
+2025-04-15 05:46:02,599 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\logs
+2025-04-15 05:46:02,599 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data
+2025-04-15 05:46:02,599 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\cache
+2025-04-15 05:46:02,599 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\vector_store
+2025-04-15 05:46:02,599 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\monitor_cache
+2025-04-15 05:46:02,599 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\predictor_cache
+2025-04-15 05:46:02,599 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\healer_cache
+2025-04-15 05:46:02,606 - __main__ - INFO - Connecting all system components...
+2025-04-15 05:46:18,129 - __main__ - ERROR - Failed to connect system components: No module named 'ingestion'
+2025-04-15 05:46:18,135 - __main__ - ERROR - Unexpected error: No module named 'ingestion'
+2025-04-15 05:48:13,385 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\logs
+2025-04-15 05:48:13,385 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data
+2025-04-15 05:48:13,385 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\cache
+2025-04-15 05:48:13,386 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\vector_store
+2025-04-15 05:48:13,386 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\monitor_cache
+2025-04-15 05:48:13,386 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\predictor_cache
+2025-04-15 05:48:13,386 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\healer_cache
+2025-04-15 05:48:19,066 - __main__ - ERROR - Failed to start agents: cannot import name 'LogIngestionSystem' from 'app.ingestion' (d:\clg\COA\Self_healing_memory\app\ingestion.py)
+2025-04-15 05:48:19,066 - __main__ - ERROR - Unexpected error: cannot import name 'LogIngestionSystem' from 'app.ingestion' (d:\clg\COA\Self_healing_memory\app\ingestion.py)
+2025-04-15 06:11:00,790 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\logs
+2025-04-15 06:11:00,790 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data
+2025-04-15 06:11:00,790 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\cache
+2025-04-15 06:11:00,790 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\vector_store
+2025-04-15 06:11:00,790 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\monitor_cache
+2025-04-15 06:11:00,790 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\predictor_cache
+2025-04-15 06:11:00,790 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\healer_cache
+2025-04-15 06:11:07,419 - __main__ - ERROR - Failed to start agents: No module named 'ingestion'
+2025-04-15 06:11:07,419 - __main__ - ERROR - Unexpected error: No module named 'ingestion'
+2025-04-15 06:15:58,601 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\logs
+2025-04-15 06:15:58,601 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data
+2025-04-15 06:15:58,601 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\cache
+2025-04-15 06:15:58,601 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\vector_store
+2025-04-15 06:15:58,601 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\monitor_cache
+2025-04-15 06:15:58,601 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\predictor_cache
+2025-04-15 06:15:58,601 - __main__ - INFO - Ensured directory exists: D:\clg\COA\Self_healing_memory\data\healer_cache
+2025-04-15 06:16:04,393 - __main__ - ERROR - Failed to start agents: No module named 'ingestion'
+2025-04-15 06:16:04,395 - __main__ - ERROR - Unexpected error: No module named 'ingestion'

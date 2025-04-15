@@ -1,0 +1,164 @@
+2025-04-15 03:46:32,071 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 03:46:32,075 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:46:32,075 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:46:34,822 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 03:46:34,822 [INFO] Creating fresh FAISS index for healing actions
+2025-04-15 03:46:34,822 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 03:46:34,822 [INFO] Healer agent initialized successfully
+2025-04-15 03:46:34,822 [INFO] Starting Memory Manager
+2025-04-15 03:46:34,831 [INFO] Memory: Total=14188.1MB, Used=11131.8MB (78.5%), Free=3056.2MB
+2025-04-15 03:46:34,879 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:46:34,879 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:46:37,386 [INFO] Stored memory data in vector DB (total entries: 1)
+2025-04-15 03:47:07,397 [INFO] Memory: Total=14188.1MB, Used=11149.0MB (78.6%), Free=3039.1MB
+2025-04-15 03:47:07,454 [INFO] Leak detected: MemCompression (PID: 3976), +56.7MB
+2025-04-15 03:47:07,454 [INFO] Leak detected: python3.12.exe (PID: 22964), +64.8MB
+2025-04-15 03:47:07,457 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:47:07,457 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:47:10,429 [INFO] Stored memory data in vector DB (total entries: 2)
+2025-04-15 03:47:18,296 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 03:47:27,454 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 03:47:35,267 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 03:47:35,274 [INFO] Stored healing plan with ID: healing_1744669055_393
+2025-04-15 03:47:35,315 [INFO] Stored healing action in FAISS index (total: 1)
+2025-04-15 03:47:35,318 [INFO] Sent 8 healing suggestions to terminator
+2025-04-15 03:50:38,830 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 03:50:38,833 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:50:38,833 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:50:41,741 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 03:50:41,767 [INFO] Loaded FAISS index with 1 entries
+2025-04-15 03:50:41,767 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 03:50:41,767 [INFO] Healer agent initialized successfully
+2025-04-15 03:50:41,767 [INFO] Starting Memory Manager
+2025-04-15 03:50:41,776 [INFO] Memory: Total=14188.1MB, Used=10918.0MB (77.0%), Free=3270.0MB
+2025-04-15 03:50:41,830 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:50:41,830 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:50:44,247 [INFO] Stored memory data in vector DB (total entries: 3)
+2025-04-15 03:50:44,255 [ERROR] Error defragmenting memory: name 'gc' is not defined
+2025-04-15 03:50:44,266 [ERROR] Error defragmenting memory: name 'gc' is not defined
+2025-04-15 03:50:44,279 [ERROR] Error defragmenting memory: name 'gc' is not defined
+2025-04-15 03:50:44,289 [ERROR] Error defragmenting memory: name 'gc' is not defined
+2025-04-15 03:51:14,353 [INFO] Memory: Total=14188.1MB, Used=11235.9MB (79.2%), Free=2952.2MB
+2025-04-15 03:51:14,435 [INFO] Leak detected: python3.12.exe (PID: 18400), +65.2MB
+2025-04-15 03:51:14,436 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:51:14,436 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:51:16,990 [INFO] Stored memory data in vector DB (total entries: 4)
+2025-04-15 03:51:24,809 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 03:51:34,130 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 03:51:49,911 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 03:51:49,917 [INFO] Stored healing plan with ID: healing_1744669309_9994
+2025-04-15 03:51:49,940 [INFO] Stored healing action in FAISS index (total: 2)
+2025-04-15 03:51:49,942 [INFO] Sent 9 healing suggestions to terminator
+2025-04-15 03:51:49,980 [ERROR] Error defragmenting memory: name 'gc' is not defined
+2025-04-15 03:51:49,995 [ERROR] Error defragmenting memory: name 'gc' is not defined
+2025-04-15 03:51:50,012 [ERROR] Error defragmenting memory: name 'gc' is not defined
+2025-04-15 03:51:50,038 [ERROR] Error defragmenting memory: name 'gc' is not defined
+2025-04-15 03:51:50,052 [ERROR] Error defragmenting memory: name 'gc' is not defined
+2025-04-15 03:51:50,997 [INFO] Freed 14.8MB of memory
+2025-04-15 03:51:56,031 [INFO] Memory Manager stopped
+2025-04-15 03:52:27,955 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 03:52:27,956 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:52:27,956 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:52:30,410 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 03:52:30,448 [INFO] Loaded FAISS index with 2 entries
+2025-04-15 03:52:30,448 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 03:52:30,448 [INFO] Healer agent initialized successfully
+2025-04-15 03:52:30,448 [INFO] Starting Memory Manager
+2025-04-15 03:52:30,448 [INFO] Memory: Total=14188.1MB, Used=10984.7MB (77.4%), Free=3203.4MB
+2025-04-15 03:52:30,498 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:52:30,498 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:52:39,523 [INFO] Stored memory data in vector DB (total entries: 5)
+2025-04-15 03:52:39,681 [ERROR] Error defragmenting memory: name 'platform' is not defined
+2025-04-15 03:52:39,825 [ERROR] Error defragmenting memory: name 'platform' is not defined
+2025-04-15 03:52:39,966 [ERROR] Error defragmenting memory: name 'platform' is not defined
+2025-04-15 03:52:40,106 [ERROR] Error defragmenting memory: name 'platform' is not defined
+2025-04-15 03:52:40,281 [ERROR] Error defragmenting memory: name 'platform' is not defined
+2025-04-15 03:53:10,850 [INFO] Memory: Total=14188.1MB, Used=10954.7MB (77.2%), Free=3233.3MB
+2025-04-15 03:53:10,923 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:53:10,923 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:53:13,272 [INFO] Stored memory data in vector DB (total entries: 6)
+2025-04-15 03:53:13,435 [ERROR] Error defragmenting memory: name 'platform' is not defined
+2025-04-15 03:53:13,597 [ERROR] Error defragmenting memory: name 'platform' is not defined
+2025-04-15 03:53:13,760 [ERROR] Error defragmenting memory: name 'platform' is not defined
+2025-04-15 03:53:13,914 [ERROR] Error defragmenting memory: name 'platform' is not defined
+2025-04-15 03:53:14,057 [ERROR] Error defragmenting memory: name 'platform' is not defined
+2025-04-15 03:53:17,970 [INFO] Memory Manager stopped
+2025-04-15 03:53:43,778 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 03:53:43,778 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:53:43,778 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:53:46,514 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 03:53:46,515 [INFO] Loaded FAISS index with 2 entries
+2025-04-15 03:53:46,515 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 03:53:46,515 [INFO] Healer agent initialized successfully
+2025-04-15 03:53:46,515 [INFO] Starting Memory Manager
+2025-04-15 03:53:46,515 [INFO] Memory: Total=14188.1MB, Used=10628.0MB (74.9%), Free=3560.1MB
+2025-04-15 03:53:46,585 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:53:46,585 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:53:49,125 [INFO] Stored memory data in vector DB (total entries: 7)
+2025-04-15 03:53:49,281 [ERROR] Error during Windows memory defragmentation: function 'EmptyWorkingSet' not found
+2025-04-15 03:53:49,290 [INFO] Memory defragmented successfully: Freed 28.7MB
+2025-04-15 03:53:49,424 [ERROR] Error during Windows memory defragmentation: function 'EmptyWorkingSet' not found
+2025-04-15 03:53:49,431 [INFO] Memory defragmented successfully: Freed 1.4MB
+2025-04-15 03:53:49,595 [ERROR] Error during Windows memory defragmentation: function 'EmptyWorkingSet' not found
+2025-04-15 03:53:49,598 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 03:53:49,735 [ERROR] Error during Windows memory defragmentation: function 'EmptyWorkingSet' not found
+2025-04-15 03:53:49,741 [INFO] Memory defragmented successfully: Freed 1.8MB
+2025-04-15 03:53:49,892 [ERROR] Error during Windows memory defragmentation: function 'EmptyWorkingSet' not found
+2025-04-15 03:53:49,899 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 03:54:19,979 [INFO] Memory: Total=14188.1MB, Used=10969.9MB (77.3%), Free=3218.2MB
+2025-04-15 03:54:20,076 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:54:20,076 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:54:22,745 [INFO] Stored memory data in vector DB (total entries: 8)
+2025-04-15 03:54:22,910 [ERROR] Error during Windows memory defragmentation: function 'EmptyWorkingSet' not found
+2025-04-15 03:54:22,916 [INFO] Memory defragmented successfully: Freed 27.2MB
+2025-04-15 03:54:23,061 [ERROR] Error during Windows memory defragmentation: function 'EmptyWorkingSet' not found
+2025-04-15 03:54:23,067 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 03:54:23,207 [ERROR] Error during Windows memory defragmentation: function 'EmptyWorkingSet' not found
+2025-04-15 03:54:23,215 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 03:54:23,367 [ERROR] Error during Windows memory defragmentation: function 'EmptyWorkingSet' not found
+2025-04-15 03:54:23,374 [INFO] Memory defragmented successfully: Freed 34.0MB
+2025-04-15 03:54:23,525 [ERROR] Error during Windows memory defragmentation: function 'EmptyWorkingSet' not found
+2025-04-15 03:54:23,549 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 03:54:38,740 [INFO] Memory Manager stopped
+2025-04-15 03:57:47,261 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 03:57:47,265 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:57:47,265 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:57:49,866 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 03:57:49,866 [INFO] Loaded FAISS index with 2 entries
+2025-04-15 03:57:49,873 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 03:57:49,873 [INFO] Healer agent initialized successfully
+2025-04-15 03:57:49,873 [INFO] Starting Memory Manager
+2025-04-15 03:57:49,876 [INFO] Memory: Total=14188.1MB, Used=10627.1MB (74.9%), Free=3561.0MB
+2025-04-15 03:57:49,927 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:57:49,927 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:57:52,483 [INFO] Stored memory data in vector DB (total entries: 9)
+2025-04-15 03:57:52,483 [INFO] Healing suggestions are 6.0 minutes old, ignoring
+2025-04-15 03:58:22,500 [INFO] Memory: Total=14188.1MB, Used=10694.9MB (75.4%), Free=3493.1MB
+2025-04-15 03:58:22,548 [INFO] Leak detected: python3.12.exe (PID: 9856), +57.9MB
+2025-04-15 03:58:22,550 [INFO] Use pytorch device_name: cpu
+2025-04-15 03:58:22,550 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 03:58:24,941 [INFO] Stored memory data in vector DB (total entries: 10)
+2025-04-15 03:58:32,544 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 03:58:39,802 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 03:58:49,466 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 03:58:49,475 [INFO] Stored healing plan with ID: healing_1744669729_6758
+2025-04-15 03:58:49,495 [INFO] Stored healing action in FAISS index (total: 3)
+2025-04-15 03:58:49,499 [INFO] Sent 8 healing suggestions to terminator
+2025-04-15 03:58:49,696 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 03:58:49,699 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 03:58:49,699 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=943.0MB
+2025-04-15 03:58:49,706 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 03:58:49,900 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 03:58:49,900 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 03:58:49,907 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=954.5MB
+2025-04-15 03:58:49,908 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 03:58:50,067 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 03:58:50,067 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 03:58:50,068 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=955.8MB
+2025-04-15 03:58:50,073 [INFO] Memory defragmented successfully: Freed 5.0MB
+2025-04-15 03:58:50,224 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 03:58:50,224 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 03:58:50,225 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=955.8MB
+2025-04-15 03:58:50,229 [INFO] Memory defragmented successfully: Freed 0.3MB
+2025-04-15 03:58:50,354 [INFO] Successfully terminated process: Trae.exe (PID: 3432)
+2025-04-15 03:59:06,567 [INFO] Memory Manager stopped

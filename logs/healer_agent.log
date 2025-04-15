@@ -1,0 +1,710 @@
+2025-04-14 02:53:29,406 [WARNING] Gemma API not available: HTTPSConnectionPool(host='api.gemma.ai', port=443): Max retries exceeded with url: /v1/models (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FA7E8FEE30>: Failed to resolve 'api.gemma.ai' ([Errno 11002] getaddrinfo failed)"))
+2025-04-14 02:53:37,252 [ERROR] Failed to initialize local fallback model: Could not load model TinyLlama/TinyLlama-1.1B-Chat-v1.0 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.llama.modeling_llama.LlamaForCausalLM'>). See the original errors:
+
+while loading with AutoModelForCausalLM, an error is thrown:
+Traceback (most recent call last):
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\models\auto\auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\modeling_utils.py", line 4139, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map` or `tp_plan` requires `accelerate`. You can install it with `pip install accelerate`
+
+while loading with LlamaForCausalLM, an error is thrown:
+Traceback (most recent call last):
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\modeling_utils.py", line 4139, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map` or `tp_plan` requires `accelerate`. You can install it with `pip install accelerate`
+
+
+
+2025-04-14 02:53:37,377 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 02:53:41,017 [INFO] HuggingFace embeddings initialized successfully
+2025-04-14 02:53:41,494 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 02:53:41,660 [INFO] Healing actions vector store initialized successfully
+2025-04-14 02:53:41,661 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 02:53:41,690 [INFO] Monitor agent vector store accessed successfully
+2025-04-14 02:53:41,701 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-14 02:53:41,837 [WARNING] Gemma API unavailable, using local fallback
+2025-04-14 02:53:41,838 [WARNING] Gemma API unavailable, using local fallback
+2025-04-14 02:53:41,838 [WARNING] Gemma API unavailable, using local fallback
+2025-04-14 02:53:41,838 [WARNING] Gemma API unavailable, using local fallback
+2025-04-14 02:53:41,896 [INFO] Stored healing plan with ID: healing_1744579421_8101
+2025-04-14 02:53:41,896 [INFO] Memory healing monitoring stopped
+2025-04-14 03:17:41,428 [ERROR] Failed to initialize HuggingFace Hub LLM: 'module' object is not callable
+2025-04-14 03:17:54,358 [ERROR] Failed to initialize local fallback model: Could not load model TinyLlama/TinyLlama-1.1B-Chat-v1.0 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.llama.modeling_llama.LlamaForCausalLM'>). See the original errors:
+
+while loading with AutoModelForCausalLM, an error is thrown:
+Traceback (most recent call last):
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\models\auto\auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\modeling_utils.py", line 4139, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map` or `tp_plan` requires `accelerate`. You can install it with `pip install accelerate`
+
+while loading with LlamaForCausalLM, an error is thrown:
+Traceback (most recent call last):
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "D:\clg\COA\.venv\lib\site-packages\transformers\modeling_utils.py", line 4139, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map` or `tp_plan` requires `accelerate`. You can install it with `pip install accelerate`
+
+
+
+2025-04-14 03:17:54,506 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 03:17:59,119 [INFO] HuggingFace embeddings initialized successfully
+2025-04-14 03:17:59,936 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 03:18:00,136 [INFO] Healing actions vector store initialized successfully
+2025-04-14 03:18:00,136 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 03:18:00,169 [INFO] Monitor agent vector store accessed successfully
+2025-04-14 03:18:00,180 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-14 03:18:00,402 [WARNING] Number of requested results 10 is greater than number of elements in index 1, updating n_results = 1
+2025-04-14 03:18:00,437 [INFO] Stored healing plan with ID: healing_1744580880_6275
+2025-04-14 03:18:00,439 [INFO] Memory healing monitoring stopped
+2025-04-14 03:22:24,387 [ERROR] Failed to initialize HuggingFace Hub LLM: 'module' object is not callable
+2025-04-14 03:25:43,889 [INFO] Local fallback model initialized successfully
+2025-04-14 03:25:44,027 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 03:25:47,689 [INFO] HuggingFace embeddings initialized successfully
+2025-04-14 03:25:48,563 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 03:25:48,817 [INFO] Healing actions vector store initialized successfully
+2025-04-14 03:25:48,817 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 03:25:48,853 [INFO] Monitor agent vector store accessed successfully
+2025-04-14 03:25:48,869 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-14 03:25:49,163 [WARNING] Number of requested results 10 is greater than number of elements in index 2, updating n_results = 2
+2025-04-14 03:25:49,167 [INFO] Using local fallback model
+2025-04-14 03:25:49,180 [ERROR] Error in local fallback: Input length of input_ids is 200, but `max_length` is set to 200. This can lead to unexpected behavior. You should consider increasing `max_length` or, better yet, setting `max_new_tokens`.
+2025-04-14 03:25:49,181 [INFO] Using local fallback model
+2025-04-14 03:25:49,187 [ERROR] Error in local fallback: Input length of input_ids is 200, but `max_length` is set to 200. This can lead to unexpected behavior. You should consider increasing `max_length` or, better yet, setting `max_new_tokens`.
+2025-04-14 03:25:49,187 [INFO] Using local fallback model
+2025-04-14 03:25:49,193 [ERROR] Error in local fallback: Input length of input_ids is 200, but `max_length` is set to 200. This can lead to unexpected behavior. You should consider increasing `max_length` or, better yet, setting `max_new_tokens`.
+2025-04-14 03:25:49,193 [INFO] Using local fallback model
+2025-04-14 03:26:11,238 [INFO] Stored healing plan with ID: healing_1744581371_6892
+2025-04-14 03:26:11,240 [INFO] Memory healing monitoring stopped
+2025-04-14 03:31:31,029 [ERROR] Failed to initialize HuggingFace Hub LLM: 'module' object is not callable
+2025-04-14 03:31:38,204 [INFO] Device set to use cpu
+2025-04-14 03:31:39,815 [INFO] Local fallback model initialized successfully
+2025-04-14 03:31:39,946 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 03:31:43,485 [INFO] HuggingFace embeddings initialized successfully on cpu
+2025-04-14 03:31:43,994 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 03:31:44,157 [INFO] Healing actions vector store initialized successfully
+2025-04-14 03:31:44,164 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 03:31:44,192 [INFO] Monitor agent vector store accessed successfully
+2025-04-14 03:31:44,206 [INFO] Memory Healer Agent initialized: System Healer
+2025-04-14 03:31:44,439 [WARNING] Number of requested results 10 is greater than number of elements in index 3, updating n_results = 3
+2025-04-14 03:31:44,442 [INFO] Using local fallback model
+2025-04-14 03:31:44,453 [ERROR] Error in local fallback: Input length of input_ids is 200, but `max_length` is set to 200. This can lead to unexpected behavior. You should consider increasing `max_length` or, better yet, setting `max_new_tokens`.
+2025-04-14 03:31:44,453 [INFO] Using local fallback model
+2025-04-14 03:31:44,462 [ERROR] Error in local fallback: Input length of input_ids is 200, but `max_length` is set to 200. This can lead to unexpected behavior. You should consider increasing `max_length` or, better yet, setting `max_new_tokens`.
+2025-04-14 03:31:44,462 [INFO] Using local fallback model
+2025-04-14 03:31:44,470 [ERROR] Error in local fallback: Input length of input_ids is 200, but `max_length` is set to 200. This can lead to unexpected behavior. You should consider increasing `max_length` or, better yet, setting `max_new_tokens`.
+2025-04-14 03:31:44,472 [INFO] Using local fallback model
+2025-04-14 03:32:06,860 [INFO] Stored healing plan with ID: healing_1744581726_7497
+2025-04-14 03:32:06,862 [INFO] Memory healing monitoring stopped
+2025-04-14 03:40:00,276 [INFO] HuggingFace Hub LLM initialized successfully with model: google/flan-t5-base
+2025-04-14 03:40:06,609 [INFO] Device set to use cpu
+2025-04-14 03:40:08,659 [INFO] Local fallback model initialized successfully
+2025-04-14 03:40:08,785 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 03:40:13,236 [INFO] HuggingFace embeddings initialized successfully on cpu
+2025-04-14 03:40:13,762 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 03:40:13,952 [INFO] Healing actions vector store initialized successfully
+2025-04-14 03:40:13,956 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 03:40:14,001 [INFO] Monitor agent vector store accessed successfully
+2025-04-14 03:40:14,015 [INFO] Memory Healer Agent initialized: System Healer
+2025-04-14 03:40:14,209 [WARNING] Number of requested results 10 is greater than number of elements in index 4, updating n_results = 4
+2025-04-14 03:40:14,556 [ERROR] Error using HuggingFace Hub LLM: Model 'google/flan-t5-base' doesn't support task 'text2text-generation'.
+2025-04-14 03:40:14,558 [INFO] Using local fallback model
+2025-04-14 03:41:11,953 [INFO] Memory healing monitoring stopped
+2025-04-14 04:55:20,965 [INFO] Mistral client initialized successfully for healer agent
+2025-04-14 04:55:27,287 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 04:55:31,655 [INFO] HuggingFace embeddings initialized successfully
+2025-04-14 04:55:32,219 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 04:55:32,568 [INFO] Healing actions vector store initialized successfully
+2025-04-14 04:55:32,576 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 04:55:32,604 [INFO] Monitor agent vector store accessed successfully
+2025-04-14 04:55:32,611 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-14 04:55:34,126 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 04:55:34,670 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-14 04:55:34,674 [WARNING] API call failed (attempt 1/3): API error occurred: Status 429
+{"message":"Requests rate limit exceeded"}
+2025-04-14 04:55:42,595 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 04:55:47,965 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 04:55:48,067 [INFO] Stored healing plan with ID: healing_1744586747_2280
+2025-04-14 04:55:48,070 [INFO] Memory healing monitoring stopped
+2025-04-14 04:57:42,707 [INFO] Mistral client initialized successfully for healer agent
+2025-04-14 04:57:48,437 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 04:57:53,179 [INFO] HuggingFace embeddings initialized successfully
+2025-04-14 04:57:53,651 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 04:57:53,794 [INFO] Healing actions vector store initialized successfully
+2025-04-14 04:57:53,794 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 04:57:53,825 [INFO] Monitor agent vector store accessed successfully
+2025-04-14 04:57:53,836 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-14 04:57:53,986 [WARNING] Number of requested results 10 is greater than number of elements in index 1, updating n_results = 1
+2025-04-14 04:58:03,199 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 04:58:10,701 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 04:58:16,835 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 04:58:16,901 [INFO] Stored healing plan with ID: healing_1744586896_8968
+2025-04-14 04:58:16,905 [INFO] Memory healing monitoring stopped
+2025-04-15 04:03:47,118 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 04:03:47,123 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:03:47,123 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:03:49,734 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 04:03:49,768 [INFO] Loaded FAISS index with 3 entries
+2025-04-15 04:03:49,768 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 04:03:49,768 [INFO] Healer agent initialized successfully
+2025-04-15 04:03:49,768 [INFO] Starting Memory Manager
+2025-04-15 04:03:49,776 [INFO] Memory: Total=14188.1MB, Used=11603.5MB (81.8%), Free=2584.6MB
+2025-04-15 04:03:49,825 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:03:49,825 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:03:52,304 [INFO] Stored memory data in vector DB (total entries: 11)
+2025-04-15 04:04:01,727 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:04:11,210 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:04:28,286 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:04:28,302 [INFO] Stored healing plan with ID: healing_1744670068_3695
+2025-04-15 04:04:28,326 [INFO] Stored healing action in FAISS index (total: 4)
+2025-04-15 04:04:28,327 [INFO] Sent 9 healing suggestions to terminator
+2025-04-15 04:04:28,539 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:04:28,540 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:04:28,540 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=579.7MB
+2025-04-15 04:04:28,549 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 04:04:28,722 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:04:28,722 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:04:28,722 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=571.4MB
+2025-04-15 04:04:28,730 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 04:04:28,927 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:04:28,927 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:04:28,927 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=595.2MB
+2025-04-15 04:04:28,935 [INFO] Memory defragmented successfully: Freed 85.0MB
+2025-04-15 04:04:29,118 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:04:29,118 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:04:29,118 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=601.0MB
+2025-04-15 04:04:29,124 [INFO] Memory defragmented successfully: Freed 23.0MB
+2025-04-15 04:04:29,273 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:04:29,273 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:04:29,273 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=601.3MB
+2025-04-15 04:04:29,277 [INFO] Memory defragmented successfully: Freed 1.3MB
+2025-04-15 04:04:29,438 [INFO] Successfully terminated process: Trae.exe (PID: 5308)
+2025-04-15 04:04:59,476 [INFO] Memory: Total=14188.1MB, Used=11980.5MB (84.4%), Free=2207.5MB
+2025-04-15 04:04:59,536 [INFO] Leak detected: python3.12.exe (PID: 6680), +64.1MB
+2025-04-15 04:04:59,543 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:04:59,543 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:05:02,122 [INFO] Stored memory data in vector DB (total entries: 12)
+2025-04-15 04:05:04,864 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:05:13,755 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:05:23,573 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:05:23,584 [INFO] Stored healing plan with ID: healing_1744670123_6745
+2025-04-15 04:05:23,626 [INFO] Stored healing action in FAISS index (total: 5)
+2025-04-15 04:05:23,628 [INFO] Sent 4 healing suggestions to terminator
+2025-04-15 04:05:23,875 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:05:23,875 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:05:23,876 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=676.1MB
+2025-04-15 04:05:23,882 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 04:05:24,086 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:05:24,087 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:05:24,087 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=674.1MB
+2025-04-15 04:05:24,096 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 04:05:24,280 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:05:24,280 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:05:24,280 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=696.8MB
+2025-04-15 04:05:24,288 [INFO] Memory defragmented successfully: Freed 88.8MB
+2025-04-15 04:05:24,445 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:05:24,445 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:05:24,451 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=695.5MB
+2025-04-15 04:05:24,454 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 04:05:54,471 [INFO] Memory: Total=14188.1MB, Used=11939.4MB (84.2%), Free=2248.7MB
+2025-04-15 04:05:54,620 [INFO] Leak detected: python3.12.exe (PID: 6680), +69.2MB
+2025-04-15 04:05:54,626 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:05:54,626 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:05:56,990 [INFO] Stored memory data in vector DB (total entries: 13)
+2025-04-15 04:06:06,827 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:06:16,300 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:06:27,073 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:06:27,085 [INFO] Stored healing plan with ID: healing_1744670187_9477
+2025-04-15 04:06:27,166 [INFO] Stored healing action in FAISS index (total: 6)
+2025-04-15 04:06:27,168 [INFO] Sent 8 healing suggestions to terminator
+2025-04-15 04:06:27,465 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:06:27,466 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:06:27,466 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=575.3MB
+2025-04-15 04:06:27,473 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 04:06:27,661 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:06:27,661 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:06:27,662 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=600.9MB
+2025-04-15 04:06:27,669 [INFO] Memory defragmented successfully: Freed 103.2MB
+2025-04-15 04:06:27,831 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:06:27,831 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:06:27,831 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=600.6MB
+2025-04-15 04:06:27,839 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 04:06:28,002 [WARNING] K32EmptyWorkingSet failed with error code: 6
+2025-04-15 04:06:28,002 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:06:28,002 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=600.9MB
+2025-04-15 04:06:28,005 [INFO] Memory defragmented successfully: Freed 1.1MB
+2025-04-15 04:06:28,071 [INFO] Successfully terminated process: Trae.exe (PID: 9404)
+2025-04-15 04:06:50,078 [INFO] Memory Manager stopped
+2025-04-15 04:21:41,133 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 04:21:41,133 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:21:41,133 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:21:43,879 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 04:21:43,918 [INFO] Loaded FAISS index with 6 entries
+2025-04-15 04:21:43,918 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 04:21:43,918 [INFO] Healer agent initialized successfully
+2025-04-15 04:21:43,918 [INFO] Starting Memory Manager
+2025-04-15 04:21:43,924 [INFO] Memory: Total=14188.1MB, Used=11185.6MB (78.8%), Free=3002.4MB
+2025-04-15 04:21:44,053 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:21:44,053 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:21:46,435 [INFO] Stored memory data in vector DB (total entries: 14)
+2025-04-15 04:21:46,435 [INFO] Healing suggestions are 15.3 minutes old, ignoring
+2025-04-15 04:22:16,453 [INFO] Memory: Total=14188.1MB, Used=11350.7MB (80.0%), Free=2837.4MB
+2025-04-15 04:22:16,493 [INFO] Leak detected: python3.12.exe (PID: 12556), +65.3MB
+2025-04-15 04:22:16,500 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:22:16,500 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:22:19,060 [INFO] Stored memory data in vector DB (total entries: 15)
+2025-04-15 04:22:28,441 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:22:34,675 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:22:43,307 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:22:43,307 [INFO] Stored healing plan with ID: healing_1744671163_9237
+2025-04-15 04:22:43,332 [INFO] Stored healing action in FAISS index (total: 7)
+2025-04-15 04:22:43,334 [INFO] Sent 9 healing suggestions to terminator
+2025-04-15 04:22:43,603 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:22:43,605 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=713.0MB
+2025-04-15 04:22:43,613 [INFO] Memory defragmented successfully: Freed 97.4MB
+2025-04-15 04:22:43,942 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:22:43,942 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=722.9MB
+2025-04-15 04:22:43,954 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 04:22:44,229 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:22:44,229 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=739.9MB
+2025-04-15 04:22:44,237 [INFO] Memory defragmented successfully: Freed 73.1MB
+2025-04-15 04:22:44,503 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:22:44,503 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=762.3MB
+2025-04-15 04:22:44,513 [INFO] Memory defragmented successfully: Freed 97.8MB
+2025-04-15 04:22:44,770 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:22:44,770 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=769.1MB
+2025-04-15 04:22:44,780 [INFO] Memory defragmented successfully: Freed 15.8MB
+2025-04-15 04:22:44,822 [INFO] Successfully terminated process: Trae.exe (PID: 9440)
+2025-04-15 04:23:09,774 [INFO] Memory Manager stopped
+2025-04-15 04:39:18,850 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 04:39:18,850 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:39:18,850 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:39:22,355 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 04:39:22,391 [INFO] Loaded FAISS index with 7 entries
+2025-04-15 04:39:22,391 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 04:39:22,391 [INFO] Healer agent initialized successfully
+2025-04-15 04:39:22,391 [INFO] Starting Memory Manager
+2025-04-15 04:39:22,397 [INFO] Memory: Total=14188.1MB, Used=10961.0MB (77.3%), Free=3227.0MB
+2025-04-15 04:39:22,447 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:39:22,447 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:39:25,308 [INFO] Stored memory data in vector DB (total entries: 16)
+2025-04-15 04:39:25,313 [INFO] Healing suggestions are 16.7 minutes old, ignoring
+2025-04-15 04:39:55,326 [INFO] Memory: Total=14188.1MB, Used=10837.8MB (76.4%), Free=3350.2MB
+2025-04-15 04:39:55,381 [INFO] Leak detected: python3.12.exe (PID: 23248), +64.8MB
+2025-04-15 04:39:55,381 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:39:55,381 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:39:57,950 [INFO] Stored memory data in vector DB (total entries: 17)
+2025-04-15 04:40:09,297 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:40:17,231 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:40:30,713 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 04:40:30,718 [INFO] Stored healing plan with ID: healing_1744672230_1206
+2025-04-15 04:40:30,735 [INFO] Stored healing action in FAISS index (total: 8)
+2025-04-15 04:40:30,739 [INFO] Sent 7 healing suggestions to terminator
+2025-04-15 04:40:30,973 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:40:30,974 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=858.7MB
+2025-04-15 04:40:30,981 [INFO] Memory defragmented successfully: Freed 111.0MB
+2025-04-15 04:40:31,230 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:40:31,231 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=886.2MB
+2025-04-15 04:40:31,233 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 04:40:31,490 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:40:31,490 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=886.3MB
+2025-04-15 04:40:31,496 [INFO] Memory defragmented successfully: Freed 0.7MB
+2025-04-15 04:40:31,739 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 04:40:31,739 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=886.1MB
+2025-04-15 04:40:31,747 [INFO] Memory defragmented successfully: Freed 2.8MB
+2025-04-15 04:40:34,739 [INFO] Memory Manager stopped
+2025-04-15 04:41:23,947 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 04:41:23,948 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:41:23,948 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:41:26,564 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 04:41:26,598 [INFO] Loaded FAISS index with 8 entries
+2025-04-15 04:41:26,605 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 04:41:26,605 [INFO] Healer agent initialized successfully
+2025-04-15 04:41:26,605 [INFO] Starting Memory Manager
+2025-04-15 04:41:26,606 [INFO] Memory: Total=14188.1MB, Used=10907.0MB (76.9%), Free=3281.1MB
+2025-04-15 04:41:26,656 [INFO] Use pytorch device_name: cpu
+2025-04-15 04:41:26,656 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 04:41:29,039 [INFO] Stored memory data in vector DB (total entries: 18)
+2025-04-15 04:41:29,242 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=814.3MB
+2025-04-15 04:41:29,248 [INFO] Memory defragmented successfully: Freed 118.6MB
+2025-04-15 04:41:29,486 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=850.9MB
+2025-04-15 04:41:29,489 [INFO] Memory defragmented successfully: Freed 71.6MB
+2025-04-15 04:41:29,715 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=850.9MB
+2025-04-15 04:41:29,725 [INFO] Memory defragmented successfully: Freed 0.3MB
+2025-04-15 04:41:29,948 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=850.9MB
+2025-04-15 04:41:29,960 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 04:41:55,982 [INFO] Memory Manager stopped
+2025-04-15 07:28:50,832 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 07:28:50,836 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:28:50,836 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:28:53,458 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 07:28:53,466 [INFO] Loaded FAISS index with 8 entries
+2025-04-15 07:28:53,466 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 07:28:53,467 [INFO] Healer agent initialized successfully
+2025-04-15 07:28:53,467 [INFO] Starting Memory Manager
+2025-04-15 07:28:53,476 [INFO] Memory: Total=14188.1MB, Used=11464.1MB (80.8%), Free=2724.0MB
+2025-04-15 07:28:53,536 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:28:53,537 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:28:56,248 [INFO] Stored memory data in vector DB (total entries: 19)
+2025-04-15 07:29:00,679 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:29:08,259 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:29:15,900 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:29:15,914 [INFO] Stored healing plan with ID: healing_1744682355_5202
+2025-04-15 07:29:15,937 [INFO] Stored healing action in FAISS index (total: 9)
+2025-04-15 07:29:15,938 [INFO] Sent 3 healing suggestions to terminator
+2025-04-15 07:29:16,189 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=606.9MB
+2025-04-15 07:29:16,195 [INFO] Memory defragmented successfully: Freed 88.3MB
+2025-04-15 07:29:16,469 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=625.2MB
+2025-04-15 07:29:16,476 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:29:16,777 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=650.9MB
+2025-04-15 07:29:16,784 [INFO] Memory defragmented successfully: Freed 79.4MB
+2025-04-15 07:29:46,796 [INFO] Memory: Total=14188.1MB, Used=11762.0MB (82.9%), Free=2426.0MB
+2025-04-15 07:29:46,838 [INFO] Leak detected: MemCompression (PID: 3944), +111.8MB
+2025-04-15 07:29:46,838 [INFO] Leak detected: chrome.exe (PID: 13768), +173.2MB
+2025-04-15 07:29:46,841 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:29:46,841 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:29:49,273 [INFO] Stored memory data in vector DB (total entries: 20)
+2025-04-15 07:30:00,203 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:30:10,491 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:30:19,291 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:30:19,302 [INFO] Stored healing plan with ID: healing_1744682419_4173
+2025-04-15 07:30:19,328 [INFO] Stored healing action in FAISS index (total: 10)
+2025-04-15 07:30:19,333 [INFO] Sent 7 healing suggestions to terminator
+2025-04-15 07:30:19,699 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=582.6MB
+2025-04-15 07:30:19,701 [INFO] Memory defragmented successfully: Freed 38.1MB
+2025-04-15 07:30:19,958 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=599.8MB
+2025-04-15 07:30:19,967 [INFO] Memory defragmented successfully: Freed 6.4MB
+2025-04-15 07:30:20,218 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=598.6MB
+2025-04-15 07:30:20,224 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:30:46,827 [INFO] Memory Manager stopped
+2025-04-15 07:40:32,928 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 07:40:32,934 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:40:32,935 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:40:35,518 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 07:40:35,546 [INFO] Loaded FAISS index with 10 entries
+2025-04-15 07:40:35,546 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 07:40:35,552 [INFO] Healer agent initialized successfully
+2025-04-15 07:40:35,552 [INFO] Starting Memory Manager
+2025-04-15 07:40:35,554 [INFO] Memory: Total=14188.1MB, Used=11316.7MB (79.8%), Free=2871.4MB
+2025-04-15 07:40:35,596 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:40:35,596 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:40:37,956 [INFO] Stored memory data in vector DB (total entries: 21)
+2025-04-15 07:40:37,956 [INFO] Healing suggestions are 10.3 minutes old, ignoring
+2025-04-15 07:41:07,986 [INFO] Memory: Total=14188.1MB, Used=11357.8MB (80.1%), Free=2830.3MB
+2025-04-15 07:41:08,019 [INFO] Leak detected: python3.12.exe (PID: 20608), +58.7MB
+2025-04-15 07:41:08,019 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:41:08,019 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:41:10,313 [INFO] Stored memory data in vector DB (total entries: 22)
+2025-04-15 07:41:17,827 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:41:23,986 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:41:31,145 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:41:31,153 [INFO] Stored healing plan with ID: healing_1744683091_7462
+2025-04-15 07:41:31,174 [INFO] Stored healing action in FAISS index (total: 11)
+2025-04-15 07:41:31,176 [INFO] Sent 8 healing suggestions to terminator
+2025-04-15 07:41:31,411 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:41:31,411 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=755.6MB
+2025-04-15 07:41:31,427 [INFO] Memory defragmented successfully: Freed 101.3MB
+2025-04-15 07:41:31,678 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:41:31,684 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=777.4MB
+2025-04-15 07:41:31,690 [INFO] Memory defragmented successfully: Freed 6.9MB
+2025-04-15 07:41:31,983 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:41:31,983 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=774.0MB
+2025-04-15 07:41:31,987 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:41:32,253 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:41:32,253 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=784.1MB
+2025-04-15 07:41:32,273 [INFO] Memory defragmented successfully: Freed 50.2MB
+2025-04-15 07:41:32,544 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:41:32,545 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=784.9MB
+2025-04-15 07:41:32,549 [INFO] Memory defragmented successfully: Freed 3.4MB
+2025-04-15 07:41:47,158 [INFO] Memory Manager stopped
+2025-04-15 07:42:10,474 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 07:42:10,476 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:42:10,476 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:42:13,120 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 07:42:13,157 [INFO] Loaded FAISS index with 11 entries
+2025-04-15 07:42:13,157 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 07:42:13,157 [INFO] Healer agent initialized successfully
+2025-04-15 07:42:13,157 [INFO] Starting Memory Manager
+2025-04-15 07:42:13,161 [INFO] Memory: Total=14188.1MB, Used=11275.0MB (79.5%), Free=2913.1MB
+2025-04-15 07:42:13,202 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:42:13,203 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:42:15,604 [INFO] Stored memory data in vector DB (total entries: 23)
+2025-04-15 07:42:15,811 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:42:15,811 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=723.1MB
+2025-04-15 07:42:15,811 [INFO] Memory defragmented successfully: Freed 108.2MB
+2025-04-15 07:42:16,053 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:42:16,053 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=739.1MB
+2025-04-15 07:42:16,053 [INFO] Memory defragmented successfully: Freed 0.0MB
+2025-04-15 07:42:16,281 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:42:16,281 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=740.4MB
+2025-04-15 07:42:16,288 [INFO] Memory defragmented successfully: Freed 5.0MB
+2025-04-15 07:42:16,511 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:42:16,511 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=743.4MB
+2025-04-15 07:42:16,520 [INFO] Memory defragmented successfully: Freed 11.9MB
+2025-04-15 07:42:16,811 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:42:16,811 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=757.6MB
+2025-04-15 07:42:16,816 [INFO] Memory defragmented successfully: Freed 43.2MB
+2025-04-15 07:42:47,145 [INFO] Memory: Total=14188.1MB, Used=10062.8MB (70.9%), Free=4125.3MB
+2025-04-15 07:42:47,187 [INFO] Leak detected: MemCompression (PID: 3944), +183.6MB
+2025-04-15 07:42:47,191 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:42:47,191 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:44:19,029 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 07:44:19,037 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:44:19,037 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:44:21,923 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 07:44:21,923 [INFO] Loaded FAISS index with 11 entries
+2025-04-15 07:44:21,923 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 07:44:21,923 [INFO] Healer agent initialized successfully
+2025-04-15 07:44:21,923 [INFO] Starting Memory Manager
+2025-04-15 07:44:21,929 [INFO] Memory: Total=14188.1MB, Used=10388.2MB (73.2%), Free=3799.9MB
+2025-04-15 07:44:22,012 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:44:22,012 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:44:24,450 [INFO] Stored memory data in vector DB (total entries: 24)
+2025-04-15 07:44:24,623 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:44:24,623 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:44:24,623 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:44:24,623 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=945.4MB
+2025-04-15 07:44:24,633 [INFO] Memory defragmented successfully: Freed 24.8MB
+2025-04-15 07:44:24,796 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:44:24,796 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:44:24,796 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:44:24,796 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=935.6MB
+2025-04-15 07:44:24,804 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:44:24,951 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:44:24,951 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:44:24,953 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:44:24,953 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=932.8MB
+2025-04-15 07:44:24,954 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:44:25,104 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:44:25,104 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:44:25,104 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:44:25,104 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=944.3MB
+2025-04-15 07:44:25,112 [INFO] Memory defragmented successfully: Freed 49.2MB
+2025-04-15 07:44:25,279 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:44:25,279 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:44:25,281 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:44:25,281 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=944.6MB
+2025-04-15 07:44:25,284 [INFO] Memory defragmented successfully: Freed 0.5MB
+2025-04-15 07:44:51,109 [INFO] Memory Manager stopped
+2025-04-15 07:45:54,929 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 07:45:54,938 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:45:54,938 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:45:57,539 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 07:45:57,539 [INFO] Loaded FAISS index with 11 entries
+2025-04-15 07:45:57,539 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 07:45:57,539 [INFO] Healer agent initialized successfully
+2025-04-15 07:45:57,539 [INFO] Starting Memory Manager
+2025-04-15 07:45:57,547 [INFO] Memory: Total=14188.1MB, Used=10561.0MB (74.4%), Free=3627.1MB
+2025-04-15 07:45:57,595 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:45:57,595 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:46:00,220 [INFO] Stored memory data in vector DB (total entries: 25)
+2025-04-15 07:46:00,413 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:46:00,413 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:46:00,413 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:46:00,413 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=875.4MB
+2025-04-15 07:46:00,421 [INFO] Memory defragmented successfully: Freed 7.0MB
+2025-04-15 07:46:00,587 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:46:00,588 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:46:00,588 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:46:00,588 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=881.0MB
+2025-04-15 07:46:00,594 [INFO] Memory defragmented successfully: Freed 25.4MB
+2025-04-15 07:46:00,764 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:46:00,764 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:46:00,764 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:46:00,764 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=878.2MB
+2025-04-15 07:46:00,771 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:46:00,938 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:46:00,938 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:46:00,940 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:46:00,940 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=878.0MB
+2025-04-15 07:46:00,945 [INFO] Memory defragmented successfully: Freed 5.6MB
+2025-04-15 07:46:01,097 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:46:01,097 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:46:01,097 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:46:01,097 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=872.2MB
+2025-04-15 07:46:01,106 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:46:31,165 [INFO] Memory: Total=14188.1MB, Used=10946.7MB (77.2%), Free=3241.3MB
+2025-04-15 07:46:31,204 [INFO] Leak detected: Trae.exe (PID: 9552), +185.8MB
+2025-04-15 07:46:31,213 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:46:31,213 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:46:33,638 [INFO] Stored memory data in vector DB (total entries: 26)
+2025-04-15 07:46:43,742 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:46:49,763 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:46:55,155 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:46:55,171 [INFO] Stored healing plan with ID: healing_1744683415_5729
+2025-04-15 07:46:55,199 [INFO] Stored healing action in FAISS index (total: 12)
+2025-04-15 07:46:55,201 [INFO] Sent 4 healing suggestions to terminator
+2025-04-15 07:46:55,430 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:46:55,430 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:46:55,432 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:46:55,432 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=843.5MB
+2025-04-15 07:46:55,437 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:46:55,614 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:46:55,614 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:46:55,615 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:46:55,615 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=840.3MB
+2025-04-15 07:46:55,620 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:46:55,782 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:46:55,782 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:46:55,783 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:46:55,784 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=853.1MB
+2025-04-15 07:46:55,830 [INFO] Memory defragmented successfully: Freed 53.2MB
+2025-04-15 07:46:55,996 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:46:55,997 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:46:55,997 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:46:55,997 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=858.3MB
+2025-04-15 07:46:55,998 [INFO] Memory defragmented successfully: Freed 30.8MB
+2025-04-15 07:47:49,497 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 07:47:49,497 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:47:49,497 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:47:52,288 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 07:47:52,341 [INFO] Loaded FAISS index with 12 entries
+2025-04-15 07:47:52,341 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 07:47:52,343 [INFO] Healer agent initialized successfully
+2025-04-15 07:47:52,343 [INFO] Starting Memory Manager
+2025-04-15 07:47:52,347 [INFO] Memory: Total=14188.1MB, Used=10937.0MB (77.1%), Free=3251.0MB
+2025-04-15 07:47:52,406 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:47:52,406 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:47:54,832 [INFO] Stored memory data in vector DB (total entries: 27)
+2025-04-15 07:47:54,986 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:47:54,986 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:47:54,987 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:47:54,987 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:47:54,987 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=821.5MB
+2025-04-15 07:47:54,991 [INFO] Memory defragmented successfully: Freed 0.7MB
+2025-04-15 07:47:55,130 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:47:55,130 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:47:55,130 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:47:55,130 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:47:55,130 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=821.4MB
+2025-04-15 07:47:55,137 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:47:55,288 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:47:55,288 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:47:55,288 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:47:55,288 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:47:55,288 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=816.8MB
+2025-04-15 07:47:55,296 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:47:55,463 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:47:55,463 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:47:55,463 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:47:55,463 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:47:55,463 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=807.8MB
+2025-04-15 07:47:55,472 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:48:25,481 [INFO] Memory: Total=14188.1MB, Used=11278.5MB (79.5%), Free=2909.6MB
+2025-04-15 07:48:25,549 [INFO] Leak detected: Trae.exe (PID: 9552), +130.4MB
+2025-04-15 07:48:25,556 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:48:25,557 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:48:28,187 [INFO] Stored memory data in vector DB (total entries: 28)
+2025-04-15 07:48:36,000 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:48:41,180 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:48:47,641 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:48:47,659 [INFO] Stored healing plan with ID: healing_1744683527_9455
+2025-04-15 07:48:47,683 [INFO] Stored healing action in FAISS index (total: 13)
+2025-04-15 07:48:47,685 [INFO] Sent 3 healing suggestions to terminator
+2025-04-15 07:48:47,891 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:48:47,896 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:48:47,897 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:48:47,897 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:48:47,897 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=732.6MB
+2025-04-15 07:48:47,900 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:48:48,069 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:48:48,069 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:48:48,069 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:48:48,071 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:48:48,071 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=732.3MB
+2025-04-15 07:48:48,074 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:48:48,239 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:48:48,240 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:48:48,240 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:48:48,241 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:48:48,241 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=743.3MB
+2025-04-15 07:48:48,252 [INFO] Memory defragmented successfully: Freed 44.5MB
+2025-04-15 07:49:18,280 [INFO] Memory: Total=14188.1MB, Used=11671.4MB (82.3%), Free=2516.6MB
+2025-04-15 07:49:18,372 [INFO] Leak detected: Trae.exe (PID: 9552), +123.3MB
+2025-04-15 07:49:18,372 [INFO] Leak detected: python3.12.exe (PID: 11980), +63.6MB
+2025-04-15 07:49:18,372 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:49:18,379 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:49:20,739 [INFO] Stored memory data in vector DB (total entries: 29)
+2025-04-15 07:49:23,617 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:49:25,807 [INFO] Mistral client initialized successfully for healer agent
+2025-04-15 07:49:25,813 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:49:25,813 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:49:28,466 [INFO] Initialized embedding model: all-MiniLM-L6-v2
+2025-04-15 07:49:28,497 [INFO] Loaded FAISS index with 13 entries
+2025-04-15 07:49:28,497 [INFO] Memory Healer Agent initialized: Memory Surgeon
+2025-04-15 07:49:28,497 [INFO] Healer agent initialized successfully
+2025-04-15 07:49:28,497 [INFO] Starting Memory Manager
+2025-04-15 07:49:28,505 [INFO] Memory: Total=14188.1MB, Used=11617.3MB (81.9%), Free=2570.8MB
+2025-04-15 07:49:28,554 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:49:28,554 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:49:29,883 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:49:35,372 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:49:35,381 [INFO] Stored healing plan with ID: healing_1744683575_103
+2025-04-15 07:49:35,401 [INFO] Stored healing action in FAISS index (total: 14)
+2025-04-15 07:49:35,404 [INFO] Sent 5 healing suggestions to terminator
+2025-04-15 07:49:35,616 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:49:35,616 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:49:35,616 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:49:35,621 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:49:35,621 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=712.6MB
+2025-04-15 07:49:35,625 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:49:35,813 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:49:35,814 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:49:35,814 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:49:35,815 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:49:35,815 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=704.1MB
+2025-04-15 07:49:35,821 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:49:35,991 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:49:35,991 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:49:35,992 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:49:35,992 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:49:35,992 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=700.0MB
+2025-04-15 07:49:36,000 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:49:36,189 [WARNING] EmptyWorkingSet failed with error code: 6
+2025-04-15 07:49:36,189 [WARNING] DuplicateHandle failed with error code: 6
+2025-04-15 07:49:36,190 [WARNING] SetProcessWorkingSetSize failed with error code: 6
+2025-04-15 07:49:36,190 [WARNING] SetProcessWorkingSetSize with specific values failed with error code: 6
+2025-04-15 07:49:36,190 [INFO] Memory defragmentation attempted with min_ws=16.0MB, max_ws=712.1MB
+2025-04-15 07:49:36,194 [INFO] Memory defragmented successfully: Freed 48.0MB
+2025-04-15 07:49:38,779 [INFO] Stored memory data in vector DB (total entries: 30)
+2025-04-15 07:49:46,473 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:49:53,272 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:50:01,016 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:50:01,031 [INFO] Stored healing plan with ID: healing_1744683601_8136
+2025-04-15 07:50:01,056 [INFO] Stored healing action in FAISS index (total: 14)
+2025-04-15 07:50:01,058 [INFO] Sent 9 healing suggestions to terminator
+2025-04-15 07:50:01,548 [INFO] Memory defragmentation attempted using multiple methods
+2025-04-15 07:50:01,552 [INFO] Memory defragmented successfully: Freed 29.6MB
+2025-04-15 07:50:01,922 [INFO] Memory defragmentation attempted using multiple methods
+2025-04-15 07:50:01,922 [INFO] Memory defragmented successfully: Freed 23.6MB
+2025-04-15 07:50:02,285 [INFO] Memory defragmentation attempted using multiple methods
+2025-04-15 07:50:02,291 [INFO] Memory defragmented successfully: Freed 21.7MB
+2025-04-15 07:50:02,675 [INFO] Memory defragmentation attempted using multiple methods
+2025-04-15 07:50:02,683 [INFO] Memory defragmentation completed but did not free additional memory
+2025-04-15 07:50:03,084 [INFO] Memory defragmentation attempted using multiple methods
+2025-04-15 07:50:03,094 [INFO] Memory defragmented successfully: Freed 46.3MB
+2025-04-15 07:50:33,145 [INFO] Memory: Total=14188.1MB, Used=10990.3MB (77.5%), Free=3197.8MB
+2025-04-15 07:50:33,364 [INFO] Leak detected: python3.12.exe (PID: 11916), +71.6MB
+2025-04-15 07:50:33,364 [INFO] Use pytorch device_name: cpu
+2025-04-15 07:50:33,364 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-15 07:50:35,724 [INFO] Stored memory data in vector DB (total entries: 31)
+2025-04-15 07:50:42,625 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 07:50:48,789 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"

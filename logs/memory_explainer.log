@@ -1,0 +1,38 @@
+2025-04-14 06:02:16,410 [INFO] Use pytorch device_name: cpu
+2025-04-14 06:02:16,411 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 06:02:20,989 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 06:02:21,142 [INFO] Use pytorch device_name: cpu
+2025-04-14 06:02:21,142 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 06:02:24,841 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 06:02:28,482 [INFO] Use pytorch device_name: cpu
+2025-04-14 06:02:28,482 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 06:02:31,811 [INFO] Use pytorch device_name: cpu
+2025-04-14 06:02:31,817 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 06:02:35,148 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-14 06:02:38,425 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 06:02:38,583 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 06:02:38,615 [INFO] Successfully connected to monitor agent's vector store
+2025-04-14 06:02:38,617 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 06:02:38,665 [INFO] Successfully connected to healer agent's vector store
+2025-04-14 06:02:38,668 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 06:02:38,707 [INFO] Successfully connected to predictor agent's vector store
+2025-04-14 06:02:38,722 [INFO] Memory Explainer Agent initialized with collections: memory_explanations, agent_analyses
+2025-04-14 06:02:38,827 [INFO] Retrieved 3 documents from monitor agent
+2025-04-14 06:02:38,908 [WARNING] Number of requested results 10 is greater than number of elements in index 2, updating n_results = 2
+2025-04-14 06:02:38,913 [INFO] Retrieved 2 documents from healer agent
+2025-04-14 06:02:38,979 [WARNING] Number of requested results 10 is greater than number of elements in index 1, updating n_results = 1
+2025-04-14 06:02:38,983 [INFO] Retrieved 1 documents from predictor agent
+2025-04-14 06:02:46,508 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 06:02:48,621 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 06:02:53,588 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 06:02:57,522 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 06:03:03,687 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 06:03:08,292 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 06:03:12,754 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 06:03:14,126 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 06:03:14,231 [INFO] Stored explanation in vector store with timestamp 2025-04-14T06:03:14.131570
+2025-04-14 06:03:14,693 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-14 06:03:14,694 [WARNING] API call failed (attempt 1/3): API error occurred: Status 429
+{"message":"Requests rate limit exceeded"}
+2025-04-14 06:03:20,222 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 06:03:23,599 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"

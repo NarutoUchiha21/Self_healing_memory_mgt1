@@ -1,0 +1,336 @@
+# Comprehensive Solutions for Self-Healing Memory Application Issues
+
+I'll provide detailed solutions for all the issues you're experiencing with your application. Let's tackle each problem methodically:
+
+## 1. Fixing LangChain Deprecation Warnings
+
+### Step 1: Update Import Statements
+Open your `healer_agent.py` file and update the import statements:
+
+```python
+# Replace these deprecated imports:
+# from langchain.embeddings import HuggingFaceEmbeddings
+# from langchain.vectorstores import Chroma
+
+# With these updated imports:
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
+```
+
+### Step 2: Install Required Packages
+Run the following command to install the specific packages:
+
+```bash
+pip install -U langchain-huggingface langchain-chroma
+```
+
+## 2. Resolving Gemma API Connection Issues
+
+### Step 1: Verify Network Connectivity
+First, ensure your network is functioning properly:
+
+```bash
+# Test general connectivity
+ping google.com
+
+# Try to resolve the Gemma API domain
+nslookup api.gemma.ai
+```
+
+### Step 2: Check Gemma API Configuration
+Verify your API configuration:
+
+```python
+# Make sure you have the correct API endpoint and credentials
+GEMMA_API_BASE = "https://api.gemma.ai/v1"  # Verify this is correct
+GEMMA_API_KEY = "your-api-key"  # Ensure your API key is valid
+
+# Add timeout settings to API calls
+timeout_seconds = 10
+```
+
+### Step 3: Implement API Verification
+Add a function to verify API availability before making calls:
+
+```python
+def verify_gemma_api_connection():
+    import requests
+    try:
+        # Simple HEAD request to check if API is reachable
+        response = requests.head(
+            f"{GEMMA_API_BASE}/models", 
+            headers={"Authorization": f"Bearer {GEMMA_API_KEY}"},
+            timeout=5
+        )
+        return response.status_code < 400
+    except Exception as e:
+        logging.warning(f"Gemma API not available: {e}")
+        return False
+```
+
+## 3. Implementing Robust Error Handling
+
+### Step 1: Create a Retry Mechanism with Fallback
+Improve your API calling mechanism:
+
+```python
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+import requests
+
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=2, max=10),
+    retry=retry_if_exception_type((requests.ConnectionError, requests.Timeout))
+)
+def query_gemma_with_fallback(prompt, use_local_fallback=True):
+    try:
+        # Your existing Gemma API query code
+        # ...
+        return gemma_response
+    
+    except Exception as e:
+        logging.error(f"Error querying Gemma API: {e}")
+        
+        if use_local_fallback:
+            return query_local_model(prompt)
+        else:
+            raise e
+
+def query_local_model(prompt):
+    """Fallback to a local model when Gemma API is unavailable"""
+    try:
+        # Option 1: Use a local LLM if available
+        # from langchain.llms import HuggingFacePipeline
+        # local_llm = HuggingFacePipeline.from_model_id(...)
+        # return local_llm(prompt)
+        
+        # Option 2: Use a simpler rule-based approach
+        logging.info("Using local fallback model")
+        return {
+            "response": "I'm currently operating in fallback mode due to API connectivity issues. " +
+                      "I can help with basic memory management tasks, but advanced features are limited."
+        }
+    except Exception as e:
+        logging.error(f"Error in local fallback: {e}")
+        return {"response": "Unable to process request due to connectivity issues."}
+```
+
+## 4. Comprehensive Dependency Updates
+
+### Step 1: Update All Dependencies
+Create a requirements.txt file with specific versions:
+
+```
+langchain>=0.2.9
+langchain-huggingface>=0.0.2
+langchain-chroma>=0.0.3
+sentence-transformers>=2.2.2
+chromadb>=0.4.13
+requests>=2.31.0
+tenacity>=8.2.3
+```
+
+### Step 2: Install Updated Requirements
+Execute:
+
+```bash
+pip install -U -r requirements.txt
+```
+
+## 5. Setting Up a Local Fallback Model
+
+### Step 1: Install a Local Model
+Add a lightweight local model for fallback:
+
+```bash
+pip install transformers torch
+```
+
+### Step 2: Implement Local Model Handler
+Add this code to your application:
+
+```python
+def initialize_local_fallback():
+    """Initialize a local model for fallback scenario"""
+    try:
+        from transformers import pipeline
+        
+        # Choose a small model that can run on CPU
+        local_model = pipeline(
+            "text-generation",
+            model="TinyLlama/TinyLlama-1.1B-Chat-v1.0", 
+            torch_dtype="auto",
+            device_map="auto"
+        )
+        logging.info("Local fallback model initialized successfully")
+        return local_model
+    except Exception as e:
+        logging.error(f"Failed to initialize local fallback model: {e}")
+        return None
+
+# Initialize at startup
+local_fallback_model = initialize_local_fallback()
+
+def generate_with_local_model(prompt, max_length=100):
+    """Generate text using local fallback model"""
+    if local_fallback_model is None:
+        return "Local model unavailable. Please try again later."
+    
+    try:
+        response = local_fallback_model(
+            prompt, 
+            max_length=max_length,
+            do_sample=True,
+            temperature=0.7,
+            top_p=0.9
+        )
+        return response[0]['generated_text'].replace(prompt, "")
+    except Exception as e:
+        logging.error(f"Error using local model: {e}")
+        return "Error generating response with local model."
+```
+
+## 6. Complete Restructured Code Example
+
+Here's a simplified example putting everything together in your `healer_agent.py`:
+
+```python
+import logging
+import os
+import requests
+from tenacity import retry, stop_after_attempt, wait_exponential
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
+
+class MemoryHealerAgent:
+    def __init__(self, name="Memory Surgeon"):
+        self.name = name
+        logging.info(f"Memory Healer Agent initialized: {name}")
+        
+        # Initialize embeddings
+        self.embeddings = HuggingFaceEmbeddings(
+            model_name="all-MiniLM-L6-v2"
+        )
+        
+        # Initialize vector store
+        self.vectorstore = Chroma(
+            embedding_function=self.embeddings,
+            collection_name="memory_fragments"
+        )
+        
+        # Initialize local fallback
+        self.local_model = self._initialize_local_fallback()
+        
+        # Check API connectivity
+        self.api_available = self._verify_gemma_api_connection()
+        
+    def _initialize_local_fallback(self):
+        """Initialize a local model for fallback scenario"""
+        try:
+            from transformers import pipeline
+            
+            # Choose a small model that can run on CPU
+            model = pipeline(
+                "text-generation",
+                model="TinyLlama/TinyLlama-1.1B-Chat-v1.0", 
+                torch_dtype="auto",
+                device_map="auto"
+            )
+            logging.info("Local fallback model initialized successfully")
+            return model
+        except Exception as e:
+            logging.error(f"Failed to initialize local fallback model: {e}")
+            return None
+    
+    def _verify_gemma_api_connection(self):
+        """Check if Gemma API is accessible"""
+        try:
+            response = requests.head(
+                "https://api.gemma.ai/v1/models", 
+                headers={"Authorization": f"Bearer {os.getenv('GEMMA_API_KEY')}"},
+                timeout=5
+            )
+            is_available = response.status_code < 400
+            logging.info(f"Gemma API availability: {is_available}")
+            return is_available
+        except Exception as e:
+            logging.warning(f"Gemma API not available: {e}")
+            return False
+    
+    @retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=2, max=10)
+    )
+    def query_gemma(self, prompt):
+        """Query Gemma API with retry logic"""
+        if not self.api_available:
+            logging.warning("Gemma API unavailable, using local fallback")
+            return self._use_local_fallback(prompt)
+            
+        try:
+            # Your existing Gemma API query code
+            # Replace with your actual implementation
+            api_url = "https://api.gemma.ai/v1/chat/completions"
+            headers = {"Authorization": f"Bearer {os.getenv('GEMMA_API_KEY')}"}
+            data = {"model": "gemma-7b", "messages": [{"role": "user", "content": prompt}]}
+            
+            response = requests.post(api_url, headers=headers, json=data, timeout=30)
+            response.raise_for_status()
+            return response.json()
+            
+        except Exception as e:
+            logging.error(f"Error querying Gemma: {e}")
+            # If all retries fail, use local fallback
+            return self._use_local_fallback(prompt)
+    
+    def _use_local_fallback(self, prompt):
+        """Use local model as fallback"""
+        if self.local_model is None:
+            return {"response": "Service temporarily unavailable. Please try again later."}
+        
+        try:
+            response = self.local_model(
+                prompt, 
+                max_length=100,
+                do_sample=True,
+                temperature=0.7
+            )
+            return {"response": response[0]['generated_text'].replace(prompt, "")}
+        except Exception as e:
+            logging.error(f"Error using local model: {e}")
+            return {"response": "Unable to process request."}
+    
+    def heal_memory(self, memory_fragment):
+        """Main function to heal corrupted memory"""
+        if self.api_available:
+            logging.info("Starting memory healing with Gemma API")
+            response = self.query_gemma(f"Heal this memory fragment: {memory_fragment}")
+        else:
+            logging.info("Starting memory healing with local fallback")
+            response = self._use_local_fallback(f"Heal this memory fragment: {memory_fragment}")
+        
+        # Process and return the healed memory
+        return response.get("response", "Unable to heal memory fragment")
+```
+
+## Additional Recommendations
+
+1. **Environment Configuration**:
+   - Use environment variables for all API keys and sensitive configuration
+   - Create a proper `.env` file and use a library like `python-dotenv` to load it
+
+2. **Health Monitoring**:
+   - Add a health check endpoint to monitor the system status
+   - Implement logging to a central location for better debugging
+
+3. **Alternative APIs**:
+   - Consider alternatives to Gemma API that might have better reliability
+   - Implement support for multiple LLM providers to avoid single points of failure
+
+4. **Documentation**:
+   - Document the fallback behavior in your user documentation
+   - Set user expectations appropriately when running in fallback mode
+
+By implementing these solutions, your self-healing memory application should be much more robust against API connectivity issues and will use the most up-to-date components from the LangChain ecosystem.
+
+Would you like me to explain any particular section in more detail?
